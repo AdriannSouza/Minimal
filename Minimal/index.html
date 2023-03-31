@@ -13,9 +13,8 @@
             theme: {
                 extend: {
                     colors: {
-                        azul: {
-                            brown: "#836953"
-                        },
+                        brown: "#836953",
+                        lightgrey: "#ECECEC"
                     },
                 }
             }
@@ -28,11 +27,11 @@
         <!-- NAVBAR -->
         <nav>
             <ul class="container flex items-center justify-center p-6 mx-auto text-black font-semi-old capitalize gap-5 md:gap-0">
-                <li><a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-blue-500 mx-1.5 sm:mx-6">Home</a></li>
+                <li><a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-brown mx-1.5 sm:mx-6">Home</a></li>
         
-                <li><a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-blue-500 mx-1.5 sm:mx-6">features</a></li>
+                <li><a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-brown mx-1.5 sm:mx-6">features</a></li>
         
-                <li><a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-blue-500 mx-1.5 sm:mx-6">Contact</a></li>
+                <li><a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-brown mx-1.5 sm:mx-6">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +39,6 @@
     <!-- CAROUSEL -->
     <section>
         <div id="default-carousel" class="relative" data-carousel="static">
-            <!-- Carousel wrapper -->
             <div class="overflow-hidden relative h-96 shadow-sm">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -81,13 +79,13 @@
     </section>
 
     <!-- MESSAGE -->
-    <section class="bg-[#ECECEC]">
-        <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-arround lg:gap-40 md:flex-row md:justify-arround md:gap-20">
+    <section class="bg-lightgrey">
+        <article class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-arround lg:gap-40 md:flex-row md:justify-arround md:gap-20">
             
             <!-- BE MINIMALIST -->
             <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                 <h1 class="font-semibold leading-none text-3xl">
-                    Be <span class="text-[#593E31] font-semibold">Minimalist</span>
+                    Be <span class="text-brown font-semibold">Minimalist</span>
                 </h1>
                 <p class="mt-6 mb-8 text-lg sm:mb-12">
                   The essential is enough
@@ -96,17 +94,17 @@
             <!-- SIMPLICITY -->
             <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                 <h1 class="font-semibold leading-none text-3xl">
-                    Clean <span class="text-[#593E31] font-semibold">Design</span>
+                    Clean <span class="text-brown font-semibold">Design</span>
                 </h1>
                 <p class="mt-6 mb-8 text-lg sm:mb-12">
                   About simplicity and clarity
                 </p>
             </div>
-        </div>
+        </article>
     </section>
    
     <!-- PAGE -->
-    <div class="bg-white py-24 sm:py-32">
+    <section class="bg-white py-24 sm:py-32">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
               <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -160,50 +158,36 @@
               </dl>
             </div>
           </div>
-    </div>
+    </section>
       
-    <!-- HOVER-->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 px-10">
-        <div
-        class="overflow-hidden group relative rounded-lg p-[1px] flex justify-center items-center"
-        >
-        <div
-            class="rounded-lg hidden group-hover:block animate-gradient w-[250%] h-[500%] absolute -top-[60%] -left-[50%] bg-gradient-to-r from-zinc-900 via-gray-200/40 to-zinc-700 shadow-xl"
-        ></div>
-        <a class="block w-full relative z-10 rounded-lg bg-white p-6 sm:p-8" href="">
-            <div class="mt-16 sm:pr-8">
-            <h3 class="text-xl font-bold text-gray-900">
-                Hover me!!!
-            </h3>
-            <p class="mt-2 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                adipisci.
-            </p>
-            </div>
-        </a>
+    <div class="ui cards">
+      <div class="card">
+        <div class="content">
+          <div class="header">Elliot Fu</div>
+          <div class="meta">Friend</div>
+          <div class="description">
+            Elliot Fu is a film-maker from New York.
+          </div>
         </div>
-        <style> 
-        @keyframes rotate-color {
-        from {
-        transform: rotate(0deg);
-        }
-        to {
-        transform: rotate(360deg);
-        }
-        }
-        @-webkit-keyframes rotate-color {
-        from {
-        -webkit-transform: rotate(0deg);
-        }
-        to {
-        -webkit-transform: rotate(360deg);
-        }
-        }
-        .animate-gradient {
-        animation: rotate-color 5s linear infinite;
-        -webkit-animation: rotate-color 5s linear infinite;
-        }
-        </style>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="header">Veronika Ossi</div>
+          <div class="meta">Friend</div>
+          <div class="description">
+            Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="header">Jenny Hess</div>
+          <div class="meta">Friend</div>
+          <div class="description">
+            Jenny is a student studying Media Management at the New School
+          </div>
+        </div>
+      </div>
     </div>
     
     <!--
