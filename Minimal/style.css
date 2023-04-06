@@ -10,6 +10,19 @@ body {
     padding: 8px;
 }
 
-.paralax {
-    background-attachment: fixed;
+.card {
+    height: 200px;
+    width: 200px;
+    margin: 12px;
+    padding: 8px;
+    /**/
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.inner-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
 }
