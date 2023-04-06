@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 body {
     /* background-color: #ECECEC; */
 }
@@ -13,16 +15,23 @@ body {
 .card {
     height: 200px;
     width: 200px;
-    margin: 12px;
+    margin: 8px;
     padding: 8px;
     /**/
     border: 1px solid black;
     border-radius: 8px;
+    background-color: white;
 }
 
 .inner-card {
+    font-family: 'Caveat', cursive;
+    font-size: 1.25em;
     height: 100%;
     display: flex;
     justify-content: center;
-    padding: 14px;
+    padding: 20px;
+}
+
+.cards {
+    background-color: #f3f3f3;
 }
